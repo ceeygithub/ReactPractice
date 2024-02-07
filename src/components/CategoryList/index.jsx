@@ -3,7 +3,6 @@ import styles from "./categorylist.module.css";
 const CategoryList = ({
     categories = []
 }) => {
-    console.log(categories, 'this is th')
     return <ul>
         {
          categories?.map((category) => {

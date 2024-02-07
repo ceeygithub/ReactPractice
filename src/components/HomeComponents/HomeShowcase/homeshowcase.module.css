@@ -13,7 +13,7 @@
  flex-grow: 1; 
  background-size: cover;
  background-position: center;
- background-image: url("https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+ background-image: url("https://images.pexels.com/photos/2422286/pexels-photo-2422286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 
 .mainBtnWrapper {
@@ -37,4 +37,18 @@
 .categories {
     width: 250px;
     margin-right: 11px;
+}
+
+.cards {
+   width: 220px;
+   flex-shrink: 0;
+   padding-left: 20px; 
+}
+
+.cards > * + * {
+    margin-top: 10px;
+}
+
+.card > * + * {
+    margin-top: 7px;
 }

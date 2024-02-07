@@ -1,11 +1,16 @@
 .cardWrapper {
     background-color: var(--color-one);
-    padding: 16px 24px 44px 16px;
+    padding: 16px 24px 40px 16px;
     width: 100%;
     color: white;
     font-family: 'Inter', sans-serif;
+    border-radius: 6px;
 }
 
+.cardWrapper[data-size="small"] {
+    padding-bottom: 12px;
+    padding-top: 14px;
+}
 .cardWrapper[data-variant="secondary"] {
     background-color: var(--color-two);
 }

@@ -4,19 +4,17 @@ import styles from "./homeshowcase.module.css";
 import Button from "../../Button";
 import CategoryList from "../../CategoryList";
 import { fetchCategories } from '../../../apiRequests/categories';
+import NormalCard from "../../NormalCard";
+import UserAvatarComponent from '../../UserAvatar';
 
 const HomeShowcase = (props) => {
 
   const [categories, setCategories] = useState([]);
 
-
-
-
   useEffect(() => {
 
     const getCategories = async () => {
       const data = await fetchCategories();
-      console.log(data, 'this is the categories')
       setCategories(data.categories)
     }
   
@@ -28,7 +26,9 @@ const HomeShowcase = (props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.categories}>
+
         <CategoryList categories={categories} />
+
       </div>
       <div className={styles.main}>
         <h3 className={styles.mainHeading}>
@@ -42,7 +42,25 @@ const HomeShowcase = (props) => {
      </Button>
         </div>
       </div>
-      <div>right side</div>
+      <div className={styles.cards}>
+        <NormalCard size="small" >
+          <div className={styles.card}>
+<UserAvatarComponent />
+<Button fullWidth>
+  Join now  
+</Button>
+<Button fullWidth variant='secondary'>
+  Log in  
+</Button>
+
+          </div>
+        </NormalCard>
+        <NormalCard variant="secondary">
+        Get US $10 off with a new supplier
+        </NormalCard>
+        <NormalCard variant="primary">
+        Send quotes with supplier preferences        </NormalCard>
+      </div>
     </div>
   );
 };
