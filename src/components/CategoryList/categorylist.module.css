@@ -1,0 +1,14 @@
+.categoryItem {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+    font-family: var(--font-primary);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.categoryItem:hover {
+background-color: var(--color-four);
+}
