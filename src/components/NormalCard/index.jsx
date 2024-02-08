@@ -1,4 +1,3 @@
-
 import './normalcard.css';
 
 const NormalCard = ({ variant, children, size}) => {
