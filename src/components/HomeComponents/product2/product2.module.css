@@ -1,0 +1,30 @@
+.wrapper {
+    /* padding: 20px 14px; */
+    background-color: var(--white);
+    /* border: 1px solid var(--gray-one); */
+    width: 1180px;
+    height: 257px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: 0.4fr 1.5fr;
+
+
+}
+
+.innerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+
+}
+
+.sideImg {
+    height: 256px;
+    width: 280px;
+    /* background: red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

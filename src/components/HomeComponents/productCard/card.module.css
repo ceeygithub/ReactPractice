@@ -1,0 +1,37 @@
+.card{
+    width: 224px;
+    height: 127px;
+    display: flex;
+    border: 1px solid #E0E0E0;
+}
+.innercard{
+    display:flex ;
+    flex-direction: column;
+}
+.innerImg{
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    /* margin-left: 100px; */
+  
+}
+.title{
+    width: 120px;
+    height: 19px;
+    margin-top: 20px;
+    margin-left: 16px;
+    color: #1C1C1C;
+}
+.para{
+    width: 97px;
+    height: 32px;
+    /* margin-top: 48px; */
+    margin-left: 16px;
+    color: #8B96A5;
+}
+.Img{
+    width: 60px;
+    height: 60px;
+    margin-top: 44px;
+    /* margin-right: 145px; */
+}
